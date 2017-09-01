@@ -24,22 +24,22 @@ but I also used the version table provided [here](http://www.qrcode.com/en/about
 
 ## Easy to use
 
-* Generates QR codes inside the terminal or as svg
-* Easy to use, only the input string is required to generate a QR code
-* Optionally customize the error correction level (all 4 supported: L, M, Q or H)
+- Generates QR codes inside the terminal or as svg
+- Easy to use, only the input string is required to generate a QR code
+- Optionally customize the error correction level (all 4 supported: L, M, Q or H)
 
 ## Automatically makes difficult decisions
 
-* Uses the correct encoding mode (all 4 supported), to save space when possible
-* Selects the correct QR version (all 40 sizes supported)
-* Picks the easiest masking type to scan (all 8 supported)
+- Uses the correct encoding mode (all 4 supported), to save space when possible
+- Selects the correct QR version (all 40 sizes supported)
+- Picks the easiest masking type to scan (all 8 supported)
 
 ## Supports all QR data encoding modes
 
-* Numeric encoding support
-* Alphanumeric encoding support
-* Binary encoding support using utf-8 (can be changed in constants.py)
-* Kanji encoding support using shift-jis
+- Numeric encoding support
+- Alphanumeric encoding support
+- Binary encoding support using utf-8 (can be changed in constants.py)
+- Kanji encoding support using shift-jis
 
 # Usage
 
@@ -77,8 +77,8 @@ All arguments besides the filename are optional.
 
 QRCode takes two arguments:
 
-* str_in (required, must be some sort of string)
-* error_level (optional, must be "L", "M", "Q" or "H")
+- `str_in` (required, must be some sort of string)
+- `error_level` (optional, must be "L", "M", "Q" or "H")
 
 Like this:
 
@@ -90,10 +90,10 @@ code.out_svg("numeric")
 ```
 There are 4 error correction levels:
 
-* L, around 7% data recovery
-* M, the default level with around 15% data recovery
-* Q, around 25% data recovery
-* H, around 30% data recovery
+- L, around 7% data recovery
+- M, the default level with around 15% data recovery
+- Q, around 25% data recovery
+- H, around 30% data recovery
 
 ## More examples
 
@@ -104,8 +104,9 @@ QRCode("9" * 3057, "H").out_svg("version 40 numeric")
 3057 is the character limit for error correction H and numeric encoding.
 Try increasing it to see the RuntimeError it gives.
 
-For more examples and further details, see "example_usage.py".
+For more examples and further details, see `example_usage.py`.
 
 # License
 
-MIT, see LICENSE for details
+This project was made by [Jelmer van Arnhem](https://github.com/Jelmerro)
+and can be copied under the terms of the MIT license, see the LICENSE file for details.

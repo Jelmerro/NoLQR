@@ -112,6 +112,7 @@ def width(version):
     """
     return 17 + 4 * version
 
+
 def character_count_indicator(mode, number_of_characters, version):
     """ Generates the character count indicator
 

@@ -2,10 +2,10 @@ from NoLQR import QRCode
 
 # numeric encoding with 7% data recovery (L)
 code = QRCode("1234567890", "L")
-print(code.version) # you can access a lot of extra info about the qr
-print(code.mode) # including the encoding mode used
+print(code.version)  # you can access a lot of extra info about the qr
+print(code.mode)  # including the encoding mode used
 print(code.err_lvl)
-print(code.matrix) # and the data matrix itself
+print(code.matrix)  # and the data matrix itself
 # lastly output the qr to the terminal
 code.out_terminal()
 
